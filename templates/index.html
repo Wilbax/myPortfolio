@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Janith Ravisanka</title>
+    <!-- external css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Montserrat:wght@100;300;700;800;900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/7a4a0e8df4.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet"  href="static/css/style.css">
+</head>
+<body class="container">
+    <!-- navbar -->
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light ">
+            <div class="container p-3 ">
+            <a class="navbar-brand" href="#">Janith Ravisanka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse ms-auto navbar-collapse " id="navbarScroll">
+              <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+                <li class="nav-item me-5">
+                  <a class="nav-link active" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item me-5">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                 <li class="nav-item me-5">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+
+    </div>
+    <!-- profile image -->
+
+    <div class="container pt-5 pb-5 bg-custom justify-content-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <img id="my_image" src="{{ url_for("static", filename="images/image31.png")  }}" class="rounded-circle imgcenter">
+            </div>
+            <div class="col-lg-8 my-auto">
+                    <h2 class="j1 pt-2 mx-auto text-light">
+                        I am Janith Ravisanka
+                    </h2>
+                    <h3 class="mx-auto text-light">
+                        I am a Programmer <span style="color: black">•</span> a Web Developer <span style="color: black">•</span> an Influencer
+                    </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <section id="about" class="">
+        <div class="about">
+            <h2 class="text-light">Abot me ...</h2>
+        </div>
+        <div>
+            <p class="text-light " id="about_text">
+                I passed My ALs with two A passes and one B pass.Now I am a undergratuate student in Moratuwa University, Sri Lanka.
+                My degree is on Artificial Intelligence.I am current doing web development and programming as my part time job.
+                I love to work with people who want to get my service.If you wish to work with me please contact me..
+            </p>
+        </div>
+    </section>
+
+    <!-- sills -->
+    <section id="skills">
+        <div class="container mx-auto p-4">
+            <h2 id="skill_h2">My skills</h2>
+        </div>
+    <div class="container">
+        <div class="row p-3" id="programming">
+            <div class="col-sm-6" >
+                <h2>Programming</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Web scrapping</li>
+                    <li>UI design</li>
+                    <li>Data science</li>
+                </ul>
+            </div>
+
+            <div class="col-sm-6">
+                <img src="{{ url_for("static", filename="images/i4.png") }}" id="programming_img">
+            </div>
+        </div>
+
+        <div class="row" id="webdevelopment">
+
+            <div class="col-sm-6">
+                <img src="{{ url_for("static", filename="images/i3.png") }}" id="web_dev_image">
+            </div>
+            <div class="col-sm-6">
+                <h2>Web Developing</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Full stack developing</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="row" id="teamwork">
+
+                <div class="col-sm-6">
+                    <h2 id="x">Team working skills</h2>
+                    <ul>
+                        <li>Leadership</li>
+                        <li>Cooperative</li>
+                        <li>Friendly</li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <img src="{{ url_for("static", filename="images/image7.png") }}">
+                </div>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+
+    </section>
+</body>
+<footer>
+    <div class="container p-3" id="social">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-1 text-light icon">
+                <i class="fab fa-facebook fa-2x"></i>
+            </div>
+            <div class="col col-lg-1 text-light icon">
+                <i class="fab fa-twitter fa-2x"></i>
+            </div>
+            <div class="col col-lg-1 text-light icon">
+                <i class="fas fa-envelope fa-2x"></i>
+            </div>
+            <div class="col col-lg-1 text-light icon">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p style="text-align: center; color: white">©2022 Wilba. All Rights Reserved.</p>
+    </div>
+</footer>
+</html>
