@@ -80,6 +80,16 @@
     #x{
         margin-left: 0;
     }
+    body{
+        font-size: 20px;
+    }
+    #about_text{
+        font-size: 30px;
+    }
+    .about{
+        font-size: 35px;
+    }
+
 }
 
 #skill_h2{
