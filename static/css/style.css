@@ -15,11 +15,11 @@
     border-radius: 50%;
     margin-left: 25%;
 }
-/*.imgcenter {*/
-/*  position: relative;*/
-/*  left: 40%;*/
-/*  top: 80%;*/
-/*}*/
+.imgcenter {
+
+  left: 40%;
+  top: 80%;
+}
 .bg-custom{
     background-color:#345B63 ;
 }
